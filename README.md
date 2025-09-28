@@ -21,6 +21,8 @@ The application uses the following technology stack:
 - **PostgreSQL with pgvector** - Vector database for embeddings
 - **Java 25** - Programming language
 
+📊 **For detailed system architecture diagrams and component interactions, see [System Architecture Documentation](system-architecture.md)**
+
 ## 📋 Prerequisites
 
 Before running this application, ensure you have:
@@ -164,7 +166,7 @@ src/
 │   │   ├── AboutMeController.java       # REST API endpoints
 │   │   ├── AboutMeService.java          # Business logic for PDF verification
 │   │   ├── PdfReader.java               # PDF ingestion component
-│   │   └── DemoRunner.java              # Command line runner for PDF ingestion
+│   │   └── PdfIngestionRunner.java              # Command line runner for PDF ingestion
 │   └── resources/
 │       ├── application.properties       # Application configuration
 │       └── KyawSwaAung.pdf             # PDF document to be analyzed
@@ -175,7 +177,7 @@ src/
 
 ## 🔄 How It Works
 
-1. **Application Startup**: The `DemoRunner` automatically ingests the PDF document into the vector database
+1. **Application Startup**: The `PdfIngestionRunner` automatically ingests the PDF document into the vector database
 2. **PDF Processing**: The `PdfReader` component reads the PDF and creates embeddings
 3. **Vector Storage**: Documents are stored in PostgreSQL with pgvector extension
 4. **Query Processing**: When a question is asked:
