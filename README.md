@@ -26,6 +26,9 @@ The application uses the following technology stack:
 
 📊 **For detailed system architecture diagrams and component interactions, see [System Architecture Documentation](system-architecture.md)**
 
+**For detailed MCP email server with Spring boot, see [mcp email server](https://github.com/kyawswar87/email-mcp-server)**
+
+
 ## ✨ Key Features
 
 ### 🤖 AI-Powered Question Answering
